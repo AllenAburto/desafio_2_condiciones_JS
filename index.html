@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Condiciones JS</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Módulo JS</h1>
+        <span>Desafio 2, Condiciones</span>
+      </header>
+      <aside class="aside">
+        <ul class="nav__links">
+          <li>
+            <a href="#Item-1">Ejercicio 1</a>
+          </li>
+          <li>
+            <a href="#Item-2">Ejercicio 2</a>
+          </li>
+          <li>
+            <a href="#Item-3">Ejercicio 3</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <section class="Item-1" id="Item-1">
+          <h1>
+            Da Click a la Imagen para <span>Agregar</span> y
+            <span>Quitar</span> el borde
+          </h1>
+          <img
+            onclick="toggleBorder()"
+            id="imagen"
+            src="./assets/img/asus.jpg"
+            alt="Notebook Asus Zenbook 14 Pulgadas"
+          />
+        </section>
+        <section class="Item-2" id="Item-2">
+          <h1>Calculando Cantidad de Stickers</h1>
+          <div class="stickers">
+            <div class="allen">
+              <img
+                src="./assets/img/stikets1.jpg"
+                alt="haciendo corazon con los dedos"
+              />
+              <input
+                class="numero"
+                type="number"
+                min="0"
+                value="0"
+                id="numero1"
+                placeholder="Ingrese Cantidad"
+              />
+            </div>
+            <div class="allen">
+              <img src="./assets/img/stikets2.jpg" alt="saludando" />
+              <input
+                class="numero"
+                type="number"
+                min="0"
+                value="0"
+                id="numero2"
+                placeholder="Ingrese Cantidad"
+              />
+            </div>
+            <div class="allen">
+              <img src="./assets/img/stikets3.jpg" alt="seño de ups" />
+              <input
+                class="numero"
+                type="number"
+                min="0"
+                value="0"
+                id="numero3"
+                placeholder="Ingrese Cantidad"
+              />
+            </div>
+          </div>
+          <div>
+            <p class="total-stickers" id="output"></p>
+            <button class="valida" onclick="total()">
+              Calcular Cantidad de Stickers
+            </button>
+          </div>
+        </section>
+        <section class="Item-3" id="Item-3">
+          <h1>Ingresa el Password Correcto</h1>
+          <div class="keygen">
+            <select name="numero" id="caja1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <select name="numero" id="caja2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <select name="numero" id="caja3">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </div>
+          <div>
+            <p class="key" id="validacion"></p>
+            <button class="valida-clave" id="pass" onclick="validapass()">
+              Ingresar
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <h1>Alexis Aburto Q.</h1>
+        <p>Todos los derechos Reservados</p>
+      </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
